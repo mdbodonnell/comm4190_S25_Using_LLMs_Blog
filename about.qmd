@@ -5,4 +5,5 @@ about:
   template: jolla
 ---
 
-About this blog
+Talking with Generative AI by prompting LLMs in some sensible, some 
+silly and some just plain crazy ways!
