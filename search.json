@@ -39,6 +39,6 @@
     "href": "posts/002_next_post/last_letter_problem.html",
     "title": "The last letter logic problem",
     "section": "",
-    "text": "A letter problem\nif\nDOG CAT BANANA goes to GTA\nwhat does\nRUN WALK BIKE go to?….\n\ndef answer(text):\n    words = text.strip().split()\n    parts = [ w[-1] for w in words ]\n    return ''.join(parts)\n\n\nanswer('DOG CAT BANANA')\n\n'GTA'"
+    "text": "A letter problem\nif\nDOG CAT BANANA goes to GTA\nwhat does\nRUN WALK BIKE go to?….\n\ndef answer(text):\n    words = text.strip().split()\n    parts = [ w[-1] for w in words ]\n    return ''.join(parts)\n\n\nanswer('DOG CAT BANANA')\n\n'GTA'\n\n\n\nHow does GPT4o do?\n\n\n\n\nsome new content"
   }
 ]
