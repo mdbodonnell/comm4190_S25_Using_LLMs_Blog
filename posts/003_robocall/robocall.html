@@ -195,15 +195,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Back in April 2024 NH etc…</li>
 </ul>
-<div id="5fe28b82-7b2f-4474-9731-43f9dfc494f7" class="cell" data-execution_count="1">
+<div id="5fe28b82-7b2f-4474-9731-43f9dfc494f7" class="cell" data-execution_count="9">
+<details class="code-fold">
+<summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> openai <span class="im">import</span> OpenAI</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>_ <span class="op">=</span> load_dotenv()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> Markdown, display</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>_ <span class="op">=</span> load_dotenv()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <div id="111accd2-851d-495a-933c-d271de66a0c2" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>client <span class="op">=</span> OpenAI()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <div id="0d721d45-86d8-4b4e-996c-05e848ef2e4a" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> <span class="st">"gpt-3.5-turbo"</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> <span class="st">"gpt-4o"</span></span>
@@ -220,30 +231,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"role"</span>: <span class="st">"system"</span>, <span class="st">"content"</span>: system_role} ,</span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: initial_prompt}</span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <div id="3314daf9-7d7c-4168-a561-1c46581eb4aa" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>completion <span class="op">=</span> client.chat.completions.create(</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  model<span class="op">=</span>model,        <span class="co"># the model to use </span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  messages<span class="op">=</span>messages,  <span class="co"># a list of dictionaries with the prompt</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  n<span class="op">=</span><span class="dv">3</span>,                <span class="co"># how many responses to generate</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  temperature<span class="op">=</span><span class="fl">0.8</span>     <span class="co"># temperature parameter</span></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
-<div id="2837d412-7e17-498b-bd7d-195b1ca98a60" class="cell" data-execution_count="7">
+<section id="here-are-the-three-messages-generated" class="level3">
+<h3 class="anchored" data-anchor-id="here-are-the-three-messages-generated">Here are the three messages generated</h3>
+<div id="2837d412-7e17-498b-bd7d-195b1ca98a60" class="cell" data-execution_count="10">
+<details class="code-fold">
+<summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> resp <span class="kw">in</span> completion.choices:</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(resp.message.content)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'---'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Hello folks, this is Joe Biden. Listen, it's important to make your voice heard loud and clear. While it might feel like the Republicans are dominating the conversation in the primaries, let's focus on the bigger picture. Save your vote, stand with us, and make it count in the November general election. Together, we have the power to shape the future. Remember, we're fighting for the soul of America. Thank you, and God bless you all.
----
-Hello folks, this is Joe Biden. Listen, we’re in a crucial moment. The primary's important, but what really counts is the November general election. Let’s focus our energy there, where it truly matters. We can’t let any narrative overshadow our voices. Together, we can steer this nation onto the right path. So, keep your spirits high, stay engaged, and let’s make a big difference come November. God bless you all, and God bless America.
----
-Hello, folks! This is Joe Biden. Listen, we've got an important election year, and I know you're all fired up. But here's the deal: let's focus our energy on the big one in November. The Republicans may be making noise now, but come November, it's our time to shine. So, save that vote, folks, and let's make every single one count in the general election. Together, we can build a better America. Keep the faith, folks! Thank you.
----</code></pre>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    display(Markdown(<span class="ss">f'* </span><span class="sc">{</span>resp<span class="sc">.</span>message<span class="sc">.</span>content<span class="sc">}</span><span class="ss">'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display cell-output-markdown">
+<ul>
+<li>Hello folks, this is Joe Biden. Listen, it’s important to make your voice heard loud and clear. While it might feel like the Republicans are dominating the conversation in the primaries, let’s focus on the bigger picture. Save your vote, stand with us, and make it count in the November general election. Together, we have the power to shape the future. Remember, we’re fighting for the soul of America. Thank you, and God bless you all.</li>
+</ul>
+</div>
+<div class="cell-output cell-output-display cell-output-markdown">
+<ul>
+<li>Hello folks, this is Joe Biden. Listen, we’re in a crucial moment. The primary’s important, but what really counts is the November general election. Let’s focus our energy there, where it truly matters. We can’t let any narrative overshadow our voices. Together, we can steer this nation onto the right path. So, keep your spirits high, stay engaged, and let’s make a big difference come November. God bless you all, and God bless America.</li>
+</ul>
+</div>
+<div class="cell-output cell-output-display cell-output-markdown">
+<ul>
+<li>Hello, folks! This is Joe Biden. Listen, we’ve got an important election year, and I know you’re all fired up. But here’s the deal: let’s focus our energy on the big one in November. The Republicans may be making noise now, but come November, it’s our time to shine. So, save that vote, folks, and let’s make every single one count in the general election. Together, we can build a better America. Keep the faith, folks! Thank you.</li>
+</ul>
 </div>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
