@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mdbodonnell.github.io/comm4190_S25_Using_LLMs_Blog/index.html</loc>
-    <lastmod>2025-02-12T21:13:51.425Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mdbodonnell.github.io/comm4190_S25_Using_LLMs_Blog/posts/001_test2/how_many_cookies.html</loc>
-    <lastmod>2025-02-12T21:13:51.438Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mdbodonnell.github.io/comm4190_S25_Using_LLMs_Blog/about.html</loc>
-    <lastmod>2025-02-12T21:13:51.425Z</lastmod>
+    <lastmod>2025-09-10T20:50:21.296Z</lastmod>
   </url>
   <url>
     <loc>https://mdbodonnell.github.io/comm4190_S25_Using_LLMs_Blog/posts/003_robocall/robocall.html</loc>
-    <lastmod>2025-02-12T21:13:51.440Z</lastmod>
+    <lastmod>2025-09-10T20:50:21.310Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdbodonnell.github.io/comm4190_S25_Using_LLMs_Blog/posts/001_test2/how_many_cookies.html</loc>
+    <lastmod>2025-09-10T20:50:21.308Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdbodonnell.github.io/comm4190_S25_Using_LLMs_Blog/posts/004_diagram/chatbots_are_systems.html</loc>
+    <lastmod>2025-09-10T20:50:21.310Z</lastmod>
   </url>
   <url>
     <loc>https://mdbodonnell.github.io/comm4190_S25_Using_LLMs_Blog/posts/002_next_post/last_letter_problem.html</loc>
-    <lastmod>2025-02-12T21:13:51.439Z</lastmod>
+    <lastmod>2025-09-10T20:50:21.310Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdbodonnell.github.io/comm4190_S25_Using_LLMs_Blog/about.html</loc>
+    <lastmod>2025-09-10T20:50:21.296Z</lastmod>
   </url>
 </urlset>

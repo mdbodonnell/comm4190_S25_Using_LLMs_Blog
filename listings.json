@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/004_diagram/chatbots_are_systems.html",
       "/posts/003_robocall/robocall.html",
       "/posts/002_next_post/last_letter_problem.html",
       "/posts/001_test2/how_many_cookies.html"
